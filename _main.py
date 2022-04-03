@@ -1,5 +1,5 @@
 """
-##### TXT miner #####
+##### TXT Miner #####
 """
 # Requests is needed to request page from websites
 # Retrieving news articles w/ beautifulsoup and requests
