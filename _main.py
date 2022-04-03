@@ -1,5 +1,5 @@
 """
-##### txt miner #####
+##### TXT miner #####
 """
 # Requests is needed to request page from websites
 # Retrieving news articles w/ beautifulsoup and requests
@@ -23,7 +23,6 @@ def word_count(input):
 now = datetime.now()
 date_time = now.strftime("%Y-%m-%d_%H-%M-%S")
 
-# Needed variables ####
 # Where to return results on PC & output files title info
 path = r"C:\Users\jbmor\Desktop\TRA3601_corpus\games_FR\\"
 prefix = "NINTENDO_games_"
