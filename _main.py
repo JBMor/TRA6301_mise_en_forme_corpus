@@ -1,5 +1,5 @@
 """
-##### Aspirateur Web - TRA3601 #####
+##### txt miner - TRA3601 #####
 """
 # Requests is needed to request page from websites
 # Retrieving news articles w/ beautifulsoup and requests
