@@ -1,5 +1,5 @@
 """
-##### Aspirateur Web #####
+##### Aspirateur Web - SUPPORT2 #####
 """
 # Requests is needed to request page from websites
 # Retrieving news articles w/ beautifulsoup and requests
