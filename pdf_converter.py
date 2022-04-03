@@ -1,7 +1,7 @@
 import PyPDF2
 from os import listdir
 
-# Gets all pdf files from a directory
+# Gets all PDF files from a directory
 input_path = r"C:\Users\jbmor\Desktop\TRA3601_corpus\Manual_FR\\"
 output_path = input_path
 PDF_files = listdir(input_path)
