@@ -107,7 +107,7 @@ for article_url in article_url_list:
                 article = title_text + "\n" + content_text
                 output.write(article)
 
-                # Appends all interesting info in corresponding list (needed for df)
+                # Appends all interesting info to corresponding list (needed for df)
                 file_name_list.append(file_name)
                 title_list.append(title_text)
                 content_list.append(content_text)
