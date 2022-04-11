@@ -37,7 +37,7 @@ url_list = []
 
 # Gets article links from NINTENDO and creates a list
 page_total = 50
-page_starting = 1
+page_first = 1
 x = True
 article_url_list = []
 article_title_list = []
@@ -47,20 +47,20 @@ article_list = {
     }
 
 while x:
-    news = rf"https://www.nintendo.com/fr-ca/store/games/?p={page_starting}&sort=rd"
+    news = rf"https://www.nintendo.com/fr-ca/store/games/?p={page_first}&sort=rd"
     data_news = requests.get(news)
     print(data_news)
     soup_news = bs(data_news.text, "html.parser")
     article_list_parent = soup_news.find_all("a", class_="BasicTilestyles__LinkWrapper-sc-sh8sf3-12 bQmYHg")
     try:
-        if page_starting <= page_total:
+        if page_first <= page_total:
             for i in article_list_parent:
                 url_html = i["href"]
                 title_html = url_html.replace("/en-ca/store/products/", "")
                 article_list["url"].append(url_html)
                 article_list["title"].append(title_html)
                 print(title_html)
-            page_starting = page_starting + 1
+            page_first = page_first + 1
 
         else:
              x = False
@@ -68,7 +68,7 @@ while x:
     except KeyError as err1:
         print(err1)
         x = False
-        page_starting = page_starting + 1
+        page_first = page_first + 1
 
 article_url_list = article_list["url"]
 article_title_list = article_list["title"]
